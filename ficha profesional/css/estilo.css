@@ -1,0 +1,117 @@
+/* Selector universal */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: rgb(240, 240, 240);
+    margin: 0;
+}
+
+/* Cabecera */
+header {
+    background-color: hsl(210, 50%, 25%);
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header img {
+    border-radius: 50%;
+}
+
+/* Menú */
+nav a {
+    display: inline-block;
+    background-color: #eeeeee;
+    color: #222222;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: orange;
+}
+
+/* Contenido principal */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+/* Secciones */
+main > section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+/* Títulos */
+h2, h3 {
+    color: #245580;
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* Habilidades */
+#habilidades ul {
+    list-style: none;
+    padding: 0;
+}
+
+#habilidades li {
+    display: inline-block;
+    background-color: rgb(210, 225, 240);
+    padding: 8px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+/* Formación */
+#formacion li:nth-child(2) {
+    color: #245580;
+}
+
+/* Enlace de correo */
+a[href^="mailto:"] {
+    color: orange;
+}
+
+/* Contacto */
+#contacto {
+    background-color: #222222;
+    color: white;
+}
+
+/* Esta regla gana porque #contacto tiene un selector de ID,
+   que tiene más especificidad que main > section. */
+
+#contacto h2 {
+    color: white;
+}
+
+#contacto a {
+    color: orange;
+}
+
+/* Pie de página */
+footer {
+    background-color: #222222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
